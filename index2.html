@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knox.s Contracting Services | Modern Elegance</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">KNOX<span class="gold">.</span>S</span>
+                <span class="logo-subtext">Contracting Services</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#">Careers</a>
+                <a href="#">Testimonials</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-split" id="home">
+        <div class="hero-text-side">
+            <div class="reveal">
+                <p class="hero-overline">Setting The Standard</p>
+                <h1 class="hero-title">Precision Meets<br>Modern <span class="gold-text">Elegance.</span></h1>
+                <p class="hero-description">We deliver high-end construction, zoning, and project management solutions tailored to your unique vision—ensuring flawless execution from initial planning to final handover.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-side">
+            <img src="images/hero1.png" alt="Modern Architecture">
+        </div>
+    </section>
+
+    <!-- About Section (Editorial) -->
+    <section class="section-padding" id="about" style="position: relative; overflow: hidden;">
+        <div class="sketch-bg reveal" style="position: absolute; right: -5%; top: 5%; width: 45%; max-width: 600px; opacity: 0.15; pointer-events: none; z-index: 0; mix-blend-mode: multiply;">
+            <img src="images/pencil_sketch.png" alt="Architectural Sketch" style="width: 100%; height: auto;">
+        </div>
+        <div class="sketch-bg-left reveal" style="position: absolute; left: -25%; bottom: 10%; width: 50%; max-width: 700px; opacity: 0.15; pointer-events: none; z-index: 0; mix-blend-mode: multiply; transform: scaleX(-1);">
+            <img src="images/pencil_sketch.png" alt="Architectural Sketch Half" style="width: 100%; height: auto;">
+        </div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="editorial-header reveal">
+                <h2 class="editorial-title">Building<br><span class="gold-text">Excellence.</span></h2>
+            </div>
+            
+            <div class="editorial-content reveal delay-1">
+                <div class="editorial-quote">
+                    <blockquote>"We don't just build structures; we build trust, ensuring every project is executed flawlessly from the ground up."</blockquote>
+                    <div class="quote-author">— The Knox's Promise</div>
+                </div>
+                
+                <div class="editorial-text">
+                    <span class="drop-cap">K</span>
+                    <p>nox's Contracting Services is Washington DC's premier luxury construction and zoning firm. We specialize in transforming ambitious architectural visions into flawless realities. For over 15 years, our reputation has been built on an unwavering dedication to our clients and an absolute commitment to perfection in every detail.</p>
+                    <p>Whether navigating complex zoning regulations, managing massive high-end renovations, or directing ground-up luxury builds, our elite team of craftsmen and project managers ensures that your time and investment are respected. When perfection is the only acceptable outcome, Knox's Contracting Services delivers.</p>
+                </div>
+            </div>
+
+            <div class="editorial-image reveal delay-2">
+                <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+                <img src="images/about.png" alt="Luxury Architecture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Carousel) -->
+    <section class="section-padding bg-alt" id="services">
+        <div class="container">
+            <div class="services-header center reveal" style="margin-bottom: 4rem;">
+                <h2>Our <span class="gold-text">Services</span></h2>
+                <p style="color: var(--clr-text-muted); max-width: 600px; margin: 0 auto; margin-bottom: 1.5rem;">Comprehensive solutions covering every phase of your project, from initial concept and permitting to the final stroke of paint.</p>
+            </div>
+            
+            <div class="carousel-wrapper reveal delay-1">
+                <button class="carousel-arrow prev" id="servPrev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track" id="servTrack">
+                    <!-- Slide 1 -->
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="images/portfolio_1.png" alt="Zoning">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-number">01</div>
+                            <h3>Zoning & Permitting</h3>
+                            <p>Navigating complex regulations to ensure your project is compliant and approved without delay.</p>
+                            <a href="#contact" class="btn btn-outline-dark" style="margin-top: 1rem; align-self: flex-start;">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="images/portfolio_2.png" alt="Management">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-number">02</div>
+                            <h3>Project Management</h3>
+                            <p>End-to-end oversight guaranteeing timeline adherence, budget control, and elite craftsmanship.</p>
+                            <a href="#contact" class="btn btn-outline-dark" style="margin-top: 1rem; align-self: flex-start;">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="images/portfolio_3.png" alt="Renovations">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-number">03</div>
+                            <h3>Luxury Renovations</h3>
+                            <p>Bespoke transformations that elevate your property's aesthetic and functional value.</p>
+                            <a href="#contact" class="btn btn-outline-dark" style="margin-top: 1rem; align-self: flex-start;">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-card">
+                        <div class="card-image">
+                            <img src="images/hero_bg_alt1.png" alt="Construction">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-number">04</div>
+                            <h3>Ground-Up Builds</h3>
+                            <p>From empty lot to architectural masterpiece, we handle every aspect of new construction.</p>
+                            <a href="#contact" class="btn btn-outline-dark" style="margin-top: 1rem; align-self: flex-start;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-arrow next" id="servNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Editorial Accordion) -->
+    <section class="section-padding why-choose-accordion" id="why-us" style="position: relative; overflow: hidden;">
+        <div class="sketch-bg-why reveal delay-2" style="position: absolute; right: -15%; bottom: -15%; width: 65%; max-width: 800px; opacity: 0.10; pointer-events: none; z-index: 0; mix-blend-mode: multiply; transform: rotate(-5deg);">
+            <img src="images/pencil_sketch.png" alt="Architectural Sketch Why Us" style="width: 100%; height: auto;">
+        </div>
+        <div class="container accordion-grid" style="position: relative; z-index: 1;">
+            <div class="accordion-image-wrapper reveal">
+                <img src="images/hero_bg_alt2.png" alt="Why Choose Knox.s" class="accordion-img">
+            </div>
+            
+            <div class="accordion-content reveal delay-1">
+                <h2>Why Choose <span class="gold-text">Knox.s</span></h2>
+                <p style="color: var(--clr-text-muted); margin-bottom: 2rem;">When perfection is the only acceptable outcome, Knox's Contracting Services delivers. We blend innovative techniques with timeless craftsmanship.</p>
+                
+                <div class="accordion-container">
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <h4><span class="accordion-num">01</span> Unrivaled Quality</h4>
+                            <span class="accordion-icon"><i class="fas fa-minus"></i></span>
+                        </div>
+                        <div class="accordion-body" style="display: block;">
+                            <p>Premium materials and elite tradesmen ensuring every detail of your project meets the highest luxury standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4><span class="accordion-num">02</span> Strict Compliance</h4>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Zero compromises on safety and code. We navigate complex zoning laws flawlessly to keep your project fully compliant.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4><span class="accordion-num">03</span> On-Time Delivery</h4>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Respecting your time and investment with rigorous project management that guarantees adherence to timelines.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h4><span class="accordion-num">04</span> Client Focus</h4>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Transparent and seamless communication at every phase, ensuring you are always informed and in control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section-padding bg-alt" id="portfolio">
+        <div class="container">
+            <div class="center reveal" style="margin-bottom: 3rem;">
+                <h2>Featured <span class="gold-text">Work</span></h2>
+                <p style="color: var(--clr-text-muted);">A glimpse into our portfolio of luxury residential and commercial spaces.</p>
+            </div>
+            <div class="masonry-grid reveal delay-1">
+                <div class="masonry-item">
+                    <img src="images/portfolio_1.png" alt="Project 1">
+                    <div class="masonry-overlay">
+                        <h4>Modern Estate</h4>
+                        <p style="color: var(--clr-gold); font-size: 0.8rem; text-transform: uppercase;">Full Renovation</p>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="images/portfolio_2.png" alt="Project 2">
+                    <div class="masonry-overlay">
+                        <h4>Urban Loft</h4>
+                        <p style="color: var(--clr-gold); font-size: 0.8rem; text-transform: uppercase;">Interior Build</p>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="images/portfolio_3.png" alt="Project 3">
+                    <div class="masonry-overlay">
+                        <h4>Commercial Space</h4>
+                        <p style="color: var(--clr-gold); font-size: 0.8rem; text-transform: uppercase;">Buildout</p>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="images/hero1.png" alt="Project 4">
+                    <div class="masonry-overlay">
+                        <h4>Luxury Kitchen</h4>
+                        <p style="color: var(--clr-gold); font-size: 0.8rem; text-transform: uppercase;">Remodel</p>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="images/about.png" alt="Project 5">
+                    <div class="masonry-overlay">
+                        <h4>Custom Home</h4>
+                        <p style="color: var(--clr-gold); font-size: 0.8rem; text-transform: uppercase;">Ground Up</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding" id="testimonials">
+        <div class="container">
+            <div class="center reveal" style="margin-bottom: 4rem;">
+                <h2>Client <span class="gold-text">Praise</span></h2>
+                <p style="color: var(--clr-text-muted); max-width: 600px; margin: 0 auto;">Don't just take our word for it. Hear from the clients who have experienced the Knox's standard of excellence.</p>
+            </div>
+            
+            <div class="testimonial-grid reveal delay-1">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Knox's Contracting delivered our bespoke ground-up build flawlessly. Their attention to detail and mastery of local zoning made a complex project feel effortless. Perfection is an understatement."</p>
+                    <div class="testimonial-author">
+                        <h4>James & Sarah Kensington</h4>
+                        <span>Georgetown Estate Owners</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"The level of craftsmanship and professionalism exhibited by the Knox team is unparalleled in DC. They respected our timeline and executed our high-end commercial buildout with zero compromises."</p>
+                    <div class="testimonial-author">
+                        <h4>Michael Vance</h4>
+                        <span>Vance Luxury Retail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Glassmorphism) -->
+    <section class="section-padding contact-glass" id="contact">
+        <div class="container relative">
+            <div class="glass-container reveal">
+                <div class="glass-info">
+                    <h2>Start Your <span class="gold-text">Legacy.</span></h2>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Ready to turn your ambitious architectural vision into reality? Contact our elite project management team today.</p>
+                    
+                    <div class="glass-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>1200 Luxury Ave, Washington, DC</p>
+                        </div>
+                    </div>
+                    <div class="glass-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone / Email</h4>
+                            <p>(555) 123-4567<br>info@knoxscontracting.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-form-wrapper delay-1 reveal">
+                    <form class="contact-form glass-theme-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="project-type" required>
+                                <option value="" disabled selected>Project Type</option>
+                                <option value="renovation">Luxury Renovation</option>
+                                <option value="ground-up">Ground-Up Build</option>
+                                <option value="commercial">Commercial Buildout</option>
+                                <option value="zoning">Zoning & Permitting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Project Details" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-text">KNOX<span class="gold">.</span>S</span>
+                </div>
+                <p style="margin-top: 1rem; color: #a0aec0;">Knox's Contracting Services is Washington DC's premier luxury construction and zoning firm. Transforming ambitious visions into flawless realities.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@knoxscontracting.com">info@knoxscontracting.com</a></li>
+                    <li><a href="#">(555) 123-4567</a></li>
+                    <li><a href="#">Washington, DC</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-close" id="closeModal"><i class="fas fa-times"></i></div>
+        <div class="video-modal-content">
+            <video id="aboutVideo" controls>
+                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
