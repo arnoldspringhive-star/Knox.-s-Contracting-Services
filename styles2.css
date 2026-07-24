@@ -173,12 +173,12 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #000000;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 30px 0;
     transition: var(--transition-normal);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .navbar.scrolled {
@@ -203,7 +203,7 @@ img {
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 2px;
-    color: var(--clr-navy);
+    color: #ffffff;
     line-height: 1;
 }
 
@@ -236,7 +236,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
-    color: var(--clr-navy);
+    color: #ffffff;
     text-decoration: none;
 }
 
