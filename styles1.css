@@ -221,6 +221,7 @@ img {
     object-fit: contain;
     display: block;
     mix-blend-mode: screen;
+    margin-left: -35px;
 }
 
 .nav-links {
