@@ -216,13 +216,11 @@ img {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 160px;
     width: auto;
     object-fit: contain;
     display: block;
     mix-blend-mode: screen;
-    transform: scale(2);
-    transform-origin: center left;
 }
 
 .nav-links {
