@@ -201,24 +201,28 @@ img {
 }
 
 .nav-logo {
-    height: 75px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     transition: var(--transition-normal);
     display: block;
     mix-blend-mode: screen;
+    transform: scale(2.2);
+    transform-origin: center left;
 }
 
 .navbar.scrolled .nav-logo {
-    height: 60px;
+    height: 50px;
 }
 
 .footer-logo {
-    height: 120px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     display: block;
     mix-blend-mode: screen;
+    transform: scale(2);
+    transform-origin: center left;
 }
 
 .nav-links {
