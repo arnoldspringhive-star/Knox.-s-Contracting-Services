@@ -211,6 +211,7 @@ img {
     object-fit: contain;
     transition: var(--transition-normal);
     display: block;
+    mix-blend-mode: screen;
 }
 
 .navbar.scrolled .nav-logo {
@@ -223,6 +224,7 @@ img {
     height: auto;
     object-fit: contain;
     display: block;
+    mix-blend-mode: screen;
 }
 
 .gold {
