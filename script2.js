@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Calculate scrollbar width for pixel-perfect fixed header alignment
+    const setScrollbarWidth = () => {
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+    };
+    setScrollbarWidth();
+    window.addEventListener('resize', setScrollbarWidth);
     // 1. Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');

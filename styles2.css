@@ -88,6 +88,11 @@ img {
     margin: 0 auto;
 }
 
+.section-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
 .section-padding {
     padding: var(--section-padding);
 }
@@ -117,18 +122,20 @@ img {
    Buttons
    ========================================================================== */
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     padding: 1rem 2.5rem;
-    font-size: 0.95rem;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 0;
     transition: var(--transition-normal);
     cursor: pointer;
-    text-align: center;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -163,7 +170,6 @@ img {
     background-color: var(--clr-navy);
     color: var(--clr-gold);
     border-color: var(--clr-navy);
-}    color: var(--clr-navy);
 }
 
 /* ==========================================================================
@@ -172,7 +178,7 @@ img {
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: calc(100vw - var(--scrollbar-width, 0px));
     background-color: #000000;
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -199,29 +205,28 @@ img {
     text-decoration: none;
 }
 
-.logo-text {
-    font-size: 1.8rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: #ffffff;
-    line-height: 1;
+.nav-logo {
+    height: 140px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition-normal);
+    display: block;
+}
+
+.navbar.scrolled .nav-logo {
+    height: 90px;
+}
+
+.footer-logo {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .gold {
     color: var(--clr-gold);
-}
-
-.logo-subtext {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--clr-text-muted);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    white-space: nowrap;
-    margin-top: 4px;
-    display: none;
 }
 
 .nav-links {
@@ -232,12 +237,13 @@ img {
 
 .nav-links a:not(.btn) {
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
     color: #ffffff;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .nav-links a:not(.btn)::after {
@@ -263,7 +269,7 @@ img {
     padding: 1rem 2.5rem;
     font-size: 0.85rem;
     border-radius: 4px;
-    margin: 20px 1.5rem;
+    margin: 0;
 }
 
 .mobile-menu-btn {
@@ -522,13 +528,17 @@ img {
 }
 
 .card-content h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     font-size: 1.5rem;
+    font-weight: 700;
     margin-top: 1rem;
 }
 
 .card-content p {
+    margin-top: 0;
     margin-bottom: 2rem;
+    color: #666;
+    font-size: 0.95rem;
 }
 
 .card-link {
@@ -660,7 +670,13 @@ img {
 
 .masonry-overlay h4 {
     color: #fff;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.masonry-overlay p {
+    margin-top: 0;
+    color: #ddd;
 }
 
 .masonry-item:hover img {
@@ -979,10 +995,10 @@ footer {
 }
 
 .accordion-header h4 {
-    margin-bottom: 0;
-    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
     font-family: var(--font-primary);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .accordion-num {
@@ -1001,6 +1017,11 @@ footer {
     padding-top: 1rem;
     padding-left: 2.5rem; /* align with text, not number */
     color: var(--clr-text-muted);
+}
+
+.accordion-body p {
+    margin-top: 0;
+    color: #888;
 }
 
 .accordion-item.active .accordion-header {
