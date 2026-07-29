@@ -201,7 +201,7 @@ img {
 }
 
 .nav-logo {
-    height: 140px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     transition: var(--transition-normal);
@@ -210,7 +210,7 @@ img {
 }
 
 .navbar.scrolled .nav-logo {
-    height: 90px;
+    height: 60px;
 }
 
 .footer-logo {
