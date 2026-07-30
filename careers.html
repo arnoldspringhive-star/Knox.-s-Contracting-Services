@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knox.s Contracting Services | Careers</title>
+    <meta name="description" content="Join the Knox.s Contracting Services team. Apply for a career in luxury development and construction.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .page-header {
+            position: relative;
+            padding: 200px 0 120px;
+            background-image: url('images/hero_careers.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-gold);
+            z-index: 1;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(13,13,13,1) 100%);
+            z-index: -1;
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        .page-header .page-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+        }
+        .page-header .lead {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin: 0 auto;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto 0;
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        select.form-control {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        select.form-control option {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        select.form-control:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+        .success-message {
+            display: none;
+            background: rgba(40, 167, 69, 0.1);
+            border: 1px solid #28a745;
+            color: #28a745;
+            padding: 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 768px) {
+            .form-group-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Knox.s Contracting Services" class="nav-logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="careers.html">Careers</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="index.html#contact">Contact Us</a>
+                <a href="consultation.html" class="btn btn-primary">Book a Consultation</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container reveal">
+            <div style="font-size: 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--clr-gold); font-weight: 600; margin-bottom: 1rem;">Join Our Team</div>
+            <h1 class="page-title">Build Your <span class="gold-text">Career</span></h1>
+            <p class="lead" style="max-width: 750px; margin: 0 auto; line-height: 1.6;">Join a team of passionate professionals dedicated to excellence in luxury development and contracting. We foster a collaborative, innovative, and highly professional environment where your skills are valued and your career can grow.</p>
+        </div>
+    </section>
+
+    <!-- Careers Info Section -->
+    <section class="section-padding" style="background-color: var(--bg-darker);">
+        <div class="container center mb-3">
+            <h2 class="section-title">Why Join <span class="gold-text">Us?</span></h2>
+            <p class="mx-auto" style="max-width: 800px;">At Knox.s Contracting Services, we believe that our people are our greatest asset. We foster a collaborative, innovative, and highly professional environment where your skills are valued, and your career can grow.</p>
+        </div>
+        
+        <div class="container mt-3">
+            <div class="form-container">
+                <div id="successMessage" class="success-message">
+                    <h4><i class="fas fa-check-circle"></i> Application Submitted!</h4>
+                    <p>Thank you for your interest in joining Knox.s Contracting Services. Our HR team will review your application and be in touch soon.</p>
+                </div>
+                <form class="contact-form" id="careersForm" action="mailto:hr@knoxscontracting.com" method="post" enctype="text/plain">
+                    <h3 class="mb-2">Submit Your Application</h3>
+                    <div class="form-group form-group-row" >
+                        <input type="text" name="Name" placeholder="Full Name" required style="width: 100%;">
+                        <input type="email" name="Email" placeholder="Email Address" required style="width: 100%;">
+                    </div>
+                    <div class="form-group form-group-row" >
+                        <input type="tel" name="Phone" placeholder="Phone Number" required style="width: 100%;">
+                        <select name="Position" class="form-control" required style="width: 100%;">
+                            <option value="" disabled selected>Position You're Applying For</option>
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="Architectural Designer">Architectural Designer</option>
+                            <option value="Zoning Specialist">Zoning Specialist</option>
+                            <option value="Construction Supervisor">Construction Supervisor</option>
+                            <option value="Property Manager">Property Manager</option>
+                            <option value="Administrative Staff">Administrative Staff</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" rows="5" placeholder="Tell us why you are a great fit for this position... (Please include a link to your resume or portfolio if applicable)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Apply Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <img src="images/logo.png" alt="Knox.s Contracting Services" class="footer-logo">
+                </a>
+                <p>Knox's Contracting Services is Washington DC's premier luxury construction and zoning firm.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="zoning-analysis.html">Zoning Analysis</a></li>
+                    <li><a href="project-management.html">Project Management</a></li>
+                    <li><a href="renovation.html">Renovations</a></li>
+                    <li><a href="ddot-permitting.html">DDOT Permitting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Knox.s Contracting Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+    <script>
+        document.getElementById('careersForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            const formData = new FormData(this);
+            let body = '';
+            for (let [key, value] of formData.entries()) {
+                body += `${key}: ${value}%0D%0A`;
+            }
+            window.location.href = `mailto:hr@knoxscontracting.com?subject=Job Application&body=${body}`;
+        });
+    </script>
+</body>
+</html>

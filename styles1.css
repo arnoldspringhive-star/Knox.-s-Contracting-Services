@@ -7,23 +7,23 @@
     --clr-bg-alt: #0a0a0a;
     --clr-surface: #111111;
     --clr-surface-hover: #1a1a1a;
-    
+
     --clr-gold: #D4AF37;
     --clr-gold-light: #F3E5AB;
     --clr-gold-dark: #AA8B2C;
-    
+
     --clr-text: #E0E0E0;
     --clr-text-muted: #A0A0A0;
-    
+
     /* Typography */
     --font-primary: 'Outfit', sans-serif;
     --font-heading: 'Playfair Display', serif;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-slow: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    
+
     /* Spacing */
     --section-padding: 6rem 0;
 }
@@ -33,7 +33,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -51,7 +53,12 @@ p {
     font-size: 16px !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-primary);
     font-weight: 700;
     line-height: 1.2;
@@ -59,9 +66,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: 1.5rem; }
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
 
 a {
     text-decoration: none;
@@ -99,6 +114,11 @@ img {
 
 .center {
     text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .mb-2 {
@@ -180,7 +200,7 @@ img {
     z-index: 1000;
     padding: 30px 0;
     transition: var(--transition-normal);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navbar.scrolled {
@@ -290,7 +310,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .hero-content {
@@ -317,7 +337,7 @@ img {
 
 .hero-title {
     margin-bottom: 1.5rem;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     font-size: 50px;
     line-height: 1.1;
     text-align: left;
@@ -381,7 +401,7 @@ img {
     gap: 3rem;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .stat-item h3 {
@@ -414,7 +434,7 @@ img {
     padding: 1.5rem;
     border-radius: 4px;
     max-width: 85%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     z-index: 10;
 }
 
@@ -439,7 +459,7 @@ img {
 
 .image-wrapper img {
     border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     filter: grayscale(20%) contrast(1.1);
 }
 
@@ -458,22 +478,8 @@ img {
    ========================================================================== */
 .services {
     position: relative;
-    background-image: url('images/hero_bg_alt2.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #050505;
     z-index: 1;
-}
-
-.services::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(5, 5, 5, 0.85);
-    z-index: -1;
 }
 
 .section-header {
@@ -567,8 +573,9 @@ img {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     transition: all 0.4s ease;
+    margin: 0 auto;
 }
 
 .service-card:hover .service-icon {
@@ -584,7 +591,8 @@ img {
 
 .service-card p {
     margin-top: 0;
-    color: #888; /* Lighter color for better visual hierarchy */
+    color: #888;
+    /* Lighter color for better visual hierarchy */
     font-size: 0.95rem;
 }
 
@@ -623,8 +631,8 @@ img {
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .process-number {
@@ -779,7 +787,7 @@ img {
     border-radius: 8px;
     overflow: hidden;
     aspect-ratio: 4/5;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
@@ -798,6 +806,7 @@ img {
     opacity: 1;
     z-index: 2;
 }
+
 /* ==========================================================================
    Commitment Banner
    ========================================================================== */
@@ -853,7 +862,7 @@ img {
 .commitment-item:hover {
     transform: translateY(-10px);
     border-color: rgba(212, 175, 55, 0.5);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 .commitment-icon {
@@ -905,7 +914,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -979,7 +988,7 @@ img {
     background-color: var(--clr-surface);
     padding: 3rem;
     border-radius: 4px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .contact-form h3 {
@@ -991,11 +1000,12 @@ img {
     margin-bottom: 1.5rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 1rem 1.2rem;
-    background-color: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px;
     color: #fff;
     font-family: var(--font-primary);
@@ -1003,10 +1013,11 @@ input, textarea {
     transition: var(--transition-normal);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-color: var(--clr-gold);
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 textarea {
@@ -1052,7 +1063,7 @@ footer {
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     transition: var(--transition-normal);
 }
@@ -1093,7 +1104,7 @@ footer {
 
 .footer-bottom {
     padding: 1.5rem 0;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     text-align: center;
     color: var(--clr-text-muted);
     font-size: 0.9rem;
@@ -1108,10 +1119,21 @@ footer {
     animation: fadeInUp 0.8s forwards;
 }
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
-.delay-4 { animation-delay: 0.8s; }
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
 
 @keyframes fadeInUp {
     to {
@@ -1135,33 +1157,39 @@ footer {
    Responsive
    ========================================================================== */
 @media (max-width: 992px) {
-    .about-grid, .why-us-grid, .contact-grid {
+
+    .about-grid,
+    .why-us-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .tabs-image-showcase {
         order: -1;
         margin-bottom: 1rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-    
-    h1 { font-size: 3rem; }
 
-    .process-row, .process-row.reverse {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .process-row,
+    .process-row.reverse {
         flex-direction: column;
         gap: 3rem;
     }
-    
+
     .process-number {
         bottom: -20px;
         left: 20px;
         font-size: 4rem;
     }
-    
+
     .process-row.reverse .process-number {
         right: 20px;
         left: auto;
@@ -1180,32 +1208,69 @@ footer {
         justify-content: center;
         gap: 1.5rem;
         transition: 0.4s;
-        box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
     }
-    
+
     .nav-links.active {
         right: 0;
     }
-    
+
     .mobile-menu-btn {
         display: block;
         z-index: 1001;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
     }
-    
+
     .hero-section h1 {
         font-size: 2.2rem;
     }
-    
+
     .stats {
         flex-direction: column;
         gap: 1.5rem;
     }
+}
+
+/* Service Details Values Grid */
+.core-values {
+    padding: 5rem 0;
+    background-color: var(--clr-bg-alt);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+    margin-top: 3rem;
+}
+
+.value-card {
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid var(--clr-gold);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    background: transparent;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--clr-gold);
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }

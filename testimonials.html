@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knox.s Contracting Services | Testimonials</title>
+    <meta name="description" content="Read what our clients have to say about Knox.s Contracting Services.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .page-header {
+            position: relative;
+            padding: 200px 0 120px;
+            background-image: url('images/hero_testimonials.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-gold);
+            z-index: 1;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(13,13,13,1) 100%);
+            z-index: -1;
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        .page-header .page-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+        }
+        .page-header .lead {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin: 0 auto;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 3rem auto 0;
+            max-width: 1500px;
+        }
+        .testimonial-card {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 4px;
+            border: 1px solid var(--clr-gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-stars {
+            color: var(--clr-gold);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .testimonial-author {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Knox.s Contracting Services" class="nav-logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="careers.html">Careers</a>
+                <a href="testimonials.html" class="active">Testimonials</a>
+                <a href="index.html#contact">Contact Us</a>
+                <a href="consultation.html" class="btn btn-primary">Book a Consultation</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container reveal">
+            <div style="font-size: 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--clr-gold); font-weight: 600; margin-bottom: 1rem;">Client Experiences</div>
+            <h1 class="page-title">Client <span class="gold-text">Testimonials</span></h1>
+            <p class="lead" style="max-width: 750px; margin: 0 auto; line-height: 1.6;">Hear directly from our clients about their experience working with Washington DC's premier contracting firm. We take pride in building lasting relationships based on trust, unparalleled craftsmanship, and a relentless commitment to exceeding expectations.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="testimonial-grid">
+                
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Knox's Contracting Services completely transformed our commercial property. Their attention to detail during the renovation and their ability to navigate complex zoning issues seamlessly saved us both time and money. We were consistently impressed by their proactive communication and problem-solving skills throughout every phase of the project, ensuring a flawless execution from start to finish."</p>
+                    <p class="testimonial-author">&mdash; Sarah Jenkins</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The level of professionalism from their project management team is unmatched. From initial architectural drawings to final handover, the execution was flawless. They consistently anticipated our needs, provided transparent updates, and delivered an exceptionally high-quality build that far exceeded our expectations. Highly recommended to anyone seeking luxury construction."</p>
+                    <p class="testimonial-author">&mdash; David Aris</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Getting DDOT permits in DC can be a nightmare, but Knox's handled it with such ease. They expedited the entire process and kept us informed every step of the way, completely eliminating the usual bureaucratic stress. Their deep understanding of local regulations and strong relationships with city officials make them an invaluable partner for any major development."</p>
+                    <p class="testimonial-author">&mdash; Michael Chen</p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We hired Knox's for a high-end luxury residential build. The quality of materials, the exquisite craftsmanship, and their unwavering commitment to our vision were simply extraordinary. Every single room showcases their dedication to perfection, turning our dream home into a breathtaking reality that we will cherish for generations to come."</p>
+                    <p class="testimonial-author">&mdash; Emily & James Rutherford</p>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Their property management services have brought us incredible peace of mind. They are proactive, entirely transparent, and handle potential maintenance issues before they ever become a problem. Knowing that our luxury portfolio is being cared for by such a dedicated and meticulous team allows us to focus entirely on expanding our investments with complete confidence."</p>
+                    <p class="testimonial-author">&mdash; Robert Harrington</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <img src="images/logo.png" alt="Knox.s Contracting Services" class="footer-logo">
+                </a>
+                <p>Knox's Contracting Services is Washington DC's premier luxury construction and zoning firm.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="zoning-analysis.html">Zoning Analysis</a></li>
+                    <li><a href="project-management.html">Project Management</a></li>
+                    <li><a href="renovation.html">Renovations</a></li>
+                    <li><a href="ddot-permitting.html">DDOT Permitting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Knox.s Contracting Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knox.s Contracting Services | Book a Consultation</title>
+    <meta name="description" content="Book a consultation with Knox.s Contracting Services for your next luxury development and construction project.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        .page-header {
+            position: relative;
+            padding: 200px 0 120px;
+            background-image: url('images/hero_consultation.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-gold);
+            z-index: 1;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(13,13,13,1) 100%);
+            z-index: -1;
+        }
+        .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+        .page-header .page-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+        }
+        .page-header .lead {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin: 0 auto;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 4px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        select.form-control, input[type="datetime-local"].form-control {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        select.form-control option {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+        select.form-control:focus, input[type="datetime-local"].form-control:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+        .success-message {
+            display: none;
+            background: rgba(40, 167, 69, 0.1);
+            border: 1px solid #28a745;
+            color: #28a745;
+            padding: 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Knox.s Contracting Services" class="nav-logo">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="careers.html">Careers</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="index.html#contact">Contact Us</a>
+                <a href="consultation.html" class="btn btn-primary">Book a Consultation</a>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container reveal">
+            <div style="font-size: 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--clr-gold); font-weight: 600; margin-bottom: 1rem;">Get In Touch</div>
+            <h1 class="page-title">Book a <span class="gold-text">Consultation</span></h1>
+            <p class="lead" style="max-width: 750px; margin: 0 auto; line-height: 1.6;">Schedule an appointment with our experts to discuss your upcoming project and discover how we can help. Whether you are looking for complete project management or specialized zoning analysis, our team is ready to bring your luxury vision to life with precision.</p>
+        </div>
+    </section>
+
+    <!-- Consultation Form Section -->
+    <section class="section-padding" style="background-color: var(--bg-darker);">
+        <div class="container">
+            <div class="form-container">
+                <div id="successMessage" class="success-message">
+                    <h4><i class="fas fa-check-circle"></i> Booking Request Sent Successfully!</h4>
+                    <p>Thank you for reaching out. We will get back to you shortly to confirm your consultation time.</p>
+                </div>
+                <!-- Action set to mailto, or we can just use JS to handle it and show success -->
+                <form class="contact-form" id="consultationForm" action="mailto:info@knoxscontracting.com" method="post" enctype="text/plain">
+                    <div class="form-group" style="display: flex; gap: 1rem;">
+                        <input type="text" name="Name" placeholder="Full Name" required style="width: 100%;">
+                        <input type="email" name="Email" placeholder="Email Address" required style="width: 100%;">
+                    </div>
+                    <div class="form-group" style="display: flex; gap: 1rem;">
+                        <input type="tel" name="Phone" placeholder="Phone Number" required style="width: 100%;">
+                        <select name="Service" class="form-control" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="Zoning Analysis">Zoning Analysis & Permitting</option>
+                            <option value="Architectural Drawings">Architectural Drawings</option>
+                            <option value="Property Management">Property Management</option>
+                            <option value="Project Management">Project Management</option>
+                            <option value="Renovation">Commercial & Residential Renovation</option>
+                            <option value="DDOT Permitting">DDOT Permitting & BZA</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="datetime" style="display: block; margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">Preferred Date & Time</label>
+                        <input type="datetime-local" id="datetime" name="Preferred_Time" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Book Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <img src="images/logo.png" alt="Knox.s Contracting Services" class="footer-logo">
+                </a>
+                <p>Knox's Contracting Services is Washington DC's premier luxury construction and zoning firm. We specialize in transforming ambitious architectural visions into flawless realities, ensuring absolute compliance and unparalleled craftsmanship every step of the way.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="zoning-analysis.html">Zoning Analysis</a></li>
+                    <li><a href="project-management.html">Project Management</a></li>
+                    <li><a href="renovation.html">Renovations</a></li>
+                    <li><a href="ddot-permitting.html">DDOT Permitting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Knox.s Contracting Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+    <script>
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // To actually submit, we would typically use AJAX here, but since 
+            // the requirement asks for sending to email, a basic mailto or backend endpoint is needed.
+            // Assuming this is a static site, we just show the success message for UX.
+            // If they want native mailto, the user will be prompted by their mail client.
+            // We can trigger the mailto manually:
+            const formData = new FormData(this);
+            let body = '';
+            for (let [key, value] of formData.entries()) {
+                body += `${key}: ${value}%0D%0A`;
+            }
+            window.location.href = `mailto:info@knoxscontracting.com?subject=Consultation Booking Request&body=${body}`;
+        });
+    </script>
+</body>
+</html>
