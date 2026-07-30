@@ -1194,6 +1194,14 @@ footer {
         right: 20px;
         left: auto;
     }
+
+    .section-padding {
+        padding: 4rem 0;
+    }
+    
+    .page-header {
+        padding: 150px 0 80px !important;
+    }
 }
 
 @media (max-width: 768px) {
