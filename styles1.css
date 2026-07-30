@@ -1234,6 +1234,17 @@ footer {
 
     .footer-grid {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-links {
+        justify-content: center;
     }
 
     .hero-buttons {
